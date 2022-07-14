@@ -1,5 +1,5 @@
 {
-  "name": "ecom-p-backend",
+  "name": "ecom-backend",
   "version": "1.0.0",
   "description": "API server for our ecommerce application",
   "main": "server.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Apoorav07/Ecom-project-backend.git"
+    "url": "git+https://github.com/Apoorav07/ecom-backend.git"
   },
   "author": "Apoorav Singhal",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Apoorav07/Ecom-project-backend/issues"
+    "url": "https://github.com/Apoorav07/ecom-backend/issues"
   },
-  "homepage": "https://github.com/Apoorav07/Ecom-project-backend#readme",
+  "homepage": "https://github.com/Apoorav07/ecom-backend#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
