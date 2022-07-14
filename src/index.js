@@ -25,7 +25,7 @@ app.use("/api/v1/product",productRoutes)
 
 
 app.get('/',(req,res)=>{
-  res.send(`server running at ${port} (deployed from herokuuuuuuuu) `)
+  res.send(`server running at ${port} (deployed from gokuuuuuuuuuuuuu) `)
 })
 
 app.listen(port,(req,res)=>{

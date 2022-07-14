@@ -20,7 +20,7 @@ jobs:
       - name: Add github email
         run: git config --global user.email 'apooravsinghal666@gmail.com'
       - name: add heroku remote
-        run: git remote add heroku https://heroku:9760294c-ab0d-4427-89ce-10fa3b8d1482@git.heroku.com/ecom-site-backend.git
+        run: git remote add heroku https://heroku:${{secrets.HEROKU_API_KEY}}@git.heroku.com/${{secrets.HEROKU_APP_NAME}}.git
       - name: Fetch repo
         run: git fetch --unshallow
       - name: push to heroku remote
