@@ -1,0 +1,27 @@
+name: Deploy Server
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - "src/*"
+      - ".github/workflows/DeployServer.yml"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: test workflow
+        run: echo "YAY this workflow is running"
+      - name: Add github username
+        run: git config --global user.name 'Apoorav07'
+      - name: Add github email
+        run: git config --global user.email 'apooravsinghal666@gmail.com'
+      - name: add heroku remote
+        run: git remote add heroku https://heroku:b70d6367-d2b5-47b8-90ee-9d4bdabca732a@git.heroku.com/ecom-application-project.git
+      - name: Fetch repo
+        run: git fetch --unshallow
+      - name: push to heroku remote
+        run: git push heroku master --force

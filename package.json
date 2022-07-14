@@ -1,0 +1,39 @@
+{
+  "name": "ecom-p-backend",
+  "version": "1.0.0",
+  "description": "API server for our ecommerce application",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -w src --exec \"babel-node src\" ",
+    "build": "babel src --out-dir dist",
+    "start": "npm install && npm run build && node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Apoorav07/Ecom-project-backend.git"
+  },
+  "author": "Apoorav Singhal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Apoorav07/Ecom-project-backend/issues"
+  },
+  "homepage": "https://github.com/Apoorav07/Ecom-project-backend#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/plugin-transform-runtime": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "nodemon": "^2.0.19"
+  }
+}
